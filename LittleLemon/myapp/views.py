@@ -11,16 +11,17 @@ def drinks(request, drink_name):
     return HttpResponse(f'<h2> {drink_name} </h2> {drink[drink_name]}')
 
 def home(request):
-    return HttpResponse('<h1> Welcome to Little Lemon </h1>')
+    return HttpResponse("Welcome to Little Lemon !")
 
 def about(request):
-    return HttpResponse(f'<h1> About us </h1>')
+    print(request.user)
+    return HttpResponse("About us")
 
 def menu(request):
-    return HttpResponse(f'<h1> Menu </h1>')
+    return HttpResponse("Menu for Little Lemon")
 
 def book(request):
-    return HttpResponse(f'<h1> Make a booking </h1>')
+    return HttpResponse("Make a booking")
 
 def showform(request):
     return render(request, 'form.html')
