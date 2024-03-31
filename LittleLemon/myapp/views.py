@@ -14,7 +14,6 @@ def home(request):
     return HttpResponse("Welcome to Little Lemon !")
 
 def about(request):
-    print(request.user)
     return HttpResponse("About us")
 
 def menu(request):
