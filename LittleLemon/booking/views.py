@@ -8,4 +8,4 @@ def form_view(request):
         if form.is_valid():
             form.save()
     context = {'form' : form}
-    return render(request, 'booking.html', context)
+    return render(request, 'book.html', context)

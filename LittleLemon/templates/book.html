@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
 <p> Booking for Little Lemon ! </p>
 
 <form action = '' method = 'POST', style='background-color: #E0E0E2;'>
@@ -5,3 +8,4 @@
     {{ form.as_p}}
     <input type='submit' value='Submit'>
 </form>
+{% endblock %}
